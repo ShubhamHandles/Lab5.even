@@ -11,7 +11,7 @@ int Part(int arr[], int low, int high){
 	int index = low; 
 	
 	//start comparing with pivot
-	for(int i=low+1; i<high; i++){
+	for(int i=low; i<high; i++){
 		if(arr[i]<=pivot){
 			swap(arr[i],arr[index]); //swap if lesser than pivot
 			index++;
